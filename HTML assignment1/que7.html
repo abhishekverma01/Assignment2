@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form {
+            max-width: 400px;
+        }
+        .abc{
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            /* line-height: 5px; */
+            padding: 5px;
+        }
+        .abc #photo {
+            margin-left: 30px;
+        }
+        .abc input{
+            /* width: 60%; */
+            line-height: 5px;
+        }
+        .abc label{
+            /* width: 30%; */
+            /* text-align: center; */
+            font-weight: 600;
+        }
+       #op label{
+            font-weight: normal;
+        }
+        #op #la{
+            font-weight: 600;
+        }
+        h6{
+            font-size: 30px;
+            text-align: center;
+            color: red;
+        }
+       .main input{
+            /* border: none; */
+            outline: none;
+        }
+        .radio{
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            margin-right: 110px;
+        }
+    </style>
+</head>
+<body>
+    <h6>Employee Registration Form</h6>
+    
+    <div class="radio">
+        <label>
+            <input type="radio" name="option" value="option1">
+            MR.
+        </label><br>
+        <label>
+            <input type="radio" name="option" value="option2">
+            Mrs.
+        </label><br>
+        <label>
+            <input type="radio" name="option" value="option3">
+            Ms.
+        </label><br>
+    </div>
+    <div class="main">
+        
+        <form action="">
+            <div class="abc">
+                <label for="FirstName">First Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="First name" required>
+            </div>
+            <div class="abc">
+                <label for="LastName">Last Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Last name" required>
+            </div>
+            
+            <div class="abc">
+                <label for="email">Mail Address1</label>
+                <input type="email" id="email" name="email" placeholder="" required>
+            </div>
+            <div class="abc">
+                <label for="email">Mail Address2</label>
+                <input type="email" id="email" name="email" placeholder="" required>
+            </div>
+            <div class="abc">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="" required>
+            </div>
+            <div class="abc">
+                <label for="state">State</label>
+                <div>
+                    <select id="state" name="state">
+                        <option value="sales">Gujarat</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="hr">Human Resources</option>
+                        <option value="it">Information Technology</option>
+                        <option value="finance">Finance</option>
+                        </select>
+                </div>
+            </div>
+            <div class="abc">
+                <label for="zip">ZIP</label>
+                <input type="number" id="zip" name="zip" placeholder="" required>
+            </div>
+            <div class="abc">
+                <label for="photo">upload photo</label>
+                <input type="file" name="photo" id="photo" accept="image/*" >
+            </div>
+            <div class="abc">
+                <label for="mail">E-Mail</label>
+                <input type="email" id="mail" name="email" placeholder="" required>
+            </div>
+           <div class="abc">
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number">
+           </div>
+        
+        
+           <div class="abc" id="op">
+            <label for="english" id="la">Languages</label>
+            <div>
+            <div id="lang">
+                <input type="checkbox" id="english" name="language" value="english">
+                <label for="english">Hindi</label>
+            </div>
+            <div>
+                <input type="checkbox" id="spanish" name="language" value="spanish">
+                <label for="spanish">English</label>
+            </div>
+            <div>
+                <input type="checkbox" id="french" name="language" value="french">
+                <label for="french">French</label>
+            </div>
+            <div>
+                <input type="checkbox" id="german" name="language" value="german">
+                <label for="german">German</label>
+            </div>
+            <div>
+                <input type="checkbox" id="chinese" name="language" value="chinese">
+                <label for="chinese">Chinese</label>
+            </div>
+            </div>
+           </div>
+        
+           <div class="abc">
+            <label for="message">Additional Information</label>
+            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+           </div>
+        
+           <div class="abc">
+            <input type="submit" value="Submit">
+           <input type="reset" value="Reset">
+           </div>
+        
+        </form>
+    </div>
+</body>
+</html>
